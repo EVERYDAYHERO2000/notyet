@@ -1,0 +1,88 @@
+.contact-us {
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    pointer-events: none;
+
+    @include sm {
+        padding-top: 0;
+        height: 100vh;
+        margin-top: 100px;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+        flex-direction: column;
+
+        @include sm {
+            padding: 44px;
+        }
+
+        h2 {
+            
+        }
+    }
+
+    &__background {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background-image: url(assets/blob.png);
+        background-size: 45vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: float 6s ease-in-out infinite;
+
+        @include sm {
+            margin-top: -140px;
+        }
+
+        @keyframes float {
+            0% {
+                background-size: 45vh;
+            }
+            50% {
+                background-size: 46vh;
+            }
+            100% {
+                background-size: 45vh;
+            }
+        }
+    }
+
+    &__canvas {
+        width: 100%;
+        height: 100%;
+        pointer-events: all;
+    }
+
+    &__social {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        transform: translateY(200%);
+
+        @include sm {
+            transform: translateY(100%);
+        }
+
+        a {
+            display: block;
+            height: 56px;
+            width: 56px;
+            margin: 8px;
+            pointer-events: all;
+        }
+    }
+}
+
+

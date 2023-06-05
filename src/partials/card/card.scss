@@ -1,0 +1,106 @@
+.card {
+  border-radius: $border-radius-l;
+  display: flex;
+  box-sizing: border-box;
+
+  @include sm {
+      border-radius: $border-radius-s;
+  }
+
+  &_cover {
+    border-radius: 0 0 $border-radius-l $border-radius-l;
+    background-color: #000634;
+    background-size: cover;
+    min-height: 95vh;
+    width: 100%;
+    border: 4px solid $color-black;
+    border-top: 0;
+
+    @include sm {
+        border-radius: 0 0 $border-radius-s $border-radius-s;
+        border: none;
+    }
+  }
+
+  &_feature {
+    height: 50vw;
+    max-height: 750px;
+    max-width: 750px;
+    width: 50vw;
+    border: 4px solid $color-black;
+    box-sizing: border-box;
+    position: relative;
+
+    @include sm {
+        height: unset;
+        max-height: unset;
+        min-height: 100vh;
+        width: 100vw;
+        max-width: unset;
+        border: none;
+        box-shadow: 0 0 64px rgba(0,0,0,0.5);
+    }
+  }
+
+  &__inner {
+    margin: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include sm {
+        display: block;
+        margin: 44px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &_color {
+    &--canary {
+      background-color: $color-active-first;
+      background-image: linear-gradient(45deg, #add918 0%, $color-active-first 100%);
+
+      .card__inner {
+        color: $color-black;
+      }
+    }
+
+    &--deep-blue {
+      background-color: $color-active-second;
+      background-image: linear-gradient(315deg, #0d28ce 0%, $color-active-second 100%);
+
+      .card__inner {
+        color: $color-white;
+      }
+    }
+
+    &--light-gray {
+      background-color: $color-active-third;
+      background-image: linear-gradient(45deg, #dadada 0%, $color-active-third 100%);
+
+      .card__inner {
+        color: $color-black;
+      }
+    }
+  }
+}
+
+.card-sticky {
+    height: 1px;
+    min-height: 1px;
+    max-height: 1px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 50vh;
+
+    @include sm {
+        height: unset;
+        min-height: unset;
+        max-height: unset;
+        top: 0px;
+    }
+}
