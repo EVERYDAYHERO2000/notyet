@@ -1,9 +1,16 @@
 .page {
     display: flex;
     justify-content: center;
+    margin: 0 45px;
+    width: 100vw;
 
     &__inner {
-        max-width: 1200px;
+        max-width: 1000px;
         width: 100%;
     }
+
+    @include sm {
+        margin: 0 0;
+        width: 100vw;
+    }    
 }

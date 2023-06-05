@@ -112,7 +112,15 @@ module.exports = {
           globOptions: {
             ignore: ['*.DS_Store', 'Thumbs.db'],
           },
-        },
+        }, 
+        {
+          from: path.resolve(environment.paths.source, 'documents'),
+          to: path.resolve(environment.paths.output, 'documents'),
+          toType: 'dir',
+          globOptions: {
+            ignore: ['*.DS_Store', 'Thumbs.db'],
+          },
+        }
       ],
     }),
   ].concat(htmlPluginEntries),
