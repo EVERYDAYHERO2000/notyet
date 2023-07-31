@@ -1,0 +1,33 @@
+.columns {
+
+    display: flex;
+    gap: 75px;
+
+    & > li {
+        list-style: none;
+    }
+
+    &_2 {
+        
+        & > li {
+            width: 50%;
+        }
+    }
+
+    &_2-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & > li {
+
+        }    
+    }
+
+    &_3 {
+
+        & > li {
+            width: 33%;
+        }
+
+    }
+}

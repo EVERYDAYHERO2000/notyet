@@ -17,6 +17,7 @@
 
 /* Browser specific styles */
 @import 'scss/dirty/hacks';
+@import 'scss/base/html';
 
 /* Partials */
 @import 'partials/body/body.scss';
@@ -27,3 +28,10 @@
 @import 'partials/logo/logo.scss';
 @import 'partials/cover/cover.scss';
 @import 'partials/footer/footer.scss';
+@import 'partials/menu/menu.scss';
+@import 'partials/text/text.scss';
+@import 'partials/section/section.scss';
+@import 'partials/badges/badges.scss';
+@import 'partials/columns/columns.scss';
+@import 'partials/button/button.scss';
+@import 'partials/hightlight/hightlight.scss';

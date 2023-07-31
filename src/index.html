@@ -25,18 +25,17 @@
 </head>
 
 <body id="app" class="page">
+  <nav class="menu">
+    <ul class="menu__wrapper text text_18">
+      <li class="menu__item"><a href="#product">Product</a></li>
+      <li class="menu__item"><a href="#platform">RPM solution</a></li>
+      <li class="menu__item"><a href="#platform">Wristband</a></li>
+      <li class="menu__item"><a href="#mobile-app">Mobile App</a></li>
+      <li class="menu__item"><a href="#dashboard">Platform</a></li>
+      <li class="menu__item"><a href="#team">Team</a></li>
+    </ul>
+  </nav>
   <main class="page__inner">
-
-    <nav class="menu">
-      <ul>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#platform">RPM solution</a></li>
-        <li><a href="#platform">Wristband</a></li>
-        <li><a href="#app">Mobile App</a></li>
-        <li><a href="#dashboard">Platform</a></li>
-        <li><a href="#team">Team</a></li>
-      </ul>
-    </nav>
 
     <section id="product" class="section section_cover">
       <div class="section__content">
@@ -46,8 +45,10 @@
           <p>User-friendly system for clinics and patients to constantly monitor vital signs and react in time, so older adultstruly live their lives to the full.</p>
         </div>
         <div class="badges">
-          <span>Ailable for</span>
-          <div class="badges__store"></div>
+          <span class="text text_16">Ailable for</span>
+          <div class="badges__store">
+            <img src="assets/store.png" height="36" width="76" />
+          </div>
         </div>
       </div>
       <div class="section__cover">
@@ -55,7 +56,7 @@
       </div>
     </section>
     
-    <section class="section section_promo">
+    <section id="rpm" class="section section_promo">
       <div class="section__content">
         <h2>We help the elderly to say 'not yet' to CVD</h2>
         <div class="text text_24">
@@ -76,11 +77,11 @@
           <p>An innovative approach that combines modern technology and medical accuracy. NotYet provides essential support for doctors to respond rapidly when needed while letting the elderly take control of their health without disrupting their lifestyles. It takes healthcare and responsiveness to the next level.</p>
         </div>
       </div>
-      <div class="section__content_colomn">
-        <h3>NotYet is an <span class="hightlight">RPM solution for clinics</span> that consists of three key elements</h3>
-        <ul class="colomns colomns_3">
+      <div class="section__content_column">
+        <h3 class="h3_center">NotYet is an <span class="hightlight">RPM solution for clinics</span> that consists of three key elements</h3>
+        <ul class="columns columns_3">
           <li>
-            <img src="assets/band.png"/>
+            <img src="assets/band.png" class="col-image"/>
             <h4>Wristband</h4>
             <div class="text text_18">
               <p>A wristband that continuously measures all the indicators needed to accurately interpret the patient's condition.</p>
@@ -88,7 +89,7 @@
             <a href="#wristband" class="button">Read more</a>
           </li>
           <li>
-            <img src="assets/app.png"/>
+            <img src="assets/app.png" class="col-image" />
             <h4>Mobile app</h4>
             <div class="text text_18">
               <p>A mobile app with a simple interface and real-time feedback that sends the data to the cloud and then to the clinical platform.</p>
@@ -96,7 +97,7 @@
             <a href="#app" class="button">Read more</a>
           </li>
           <li>
-            <img src="assets/platform.png"/>
+            <img src="assets/platform.png" class="col-image"/>
             <h4>Platform</h4>
             <div class="text text_18">
               <p>Digital dash-boards and statistics that allows the physician to thoroughly and simultaneously monitor large numbers of patients.</p>
@@ -117,7 +118,7 @@
       <div class="section__cover">
         <img src="assets/band-back.png" />
       </div>
-      <ul class="colomns colomns_3">
+      <ul class="columns columns_3">
         <li>
           <ul class="icon-list">
             <li>
@@ -230,7 +231,7 @@
       </div>
     </section>
 
-    <section id="app" class="section section_app">
+    <section id="mobile-app" class="section section_app">
       <div class="section__content">
         <h2>Mobile app</h2>
         <div class="text text_24">
@@ -307,7 +308,7 @@
         <img src="assets/dashboard.png" />
         <span class="img-description">Patient dashboard</span>
       </div>
-      <ul class="colomns colomns_3">
+      <ul class="columns columns_3">
         <li>
           <h4>Patient categorization</h4>
           <div class="text text_18">
@@ -334,7 +335,7 @@
         <h2>Why NotYet is a better solution</h2>
         <div class="text text_24">
           <p>We are proud to have developed a solution that both patients and physicians want to use.</p>
-          <ul class="colomns colomns_2">
+          <ul class="columns columns_2">
             <li>
               <img src="assets/patients.svg" />
               <h4>Advantages for patients:</h4>
@@ -358,9 +359,9 @@
       </div>
     </section>
 
-    <section class="section section_team">
+    <section id="team" class="section section_team">
       <div class="section__content">
-        <ul class="colomns colomns_2">
+        <ul class="columns columns_2">
           <li>
             <h2>We <span class="love">love</span> what we do</h2>
             <div class="text text_24">
@@ -374,7 +375,7 @@
             </div>
           </li>
         </ul>
-        <ul class="colomns colomns_2-flex">
+        <ul class="columns columns_2-flex">
           <li>
             <img src="assets/p-1.png" />
             <h4>Lena Dobrokhotova</h4>

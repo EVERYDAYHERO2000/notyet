@@ -1,8 +1,10 @@
 .page {
     display: flex;
     justify-content: center;
-    margin: 0 45px;
+    padding: 0 45px;
     width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
 
     &__inner {
         max-width: 1000px;
