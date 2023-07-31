@@ -1,0 +1,19 @@
+.icon-list {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & > li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+
+        .subtitle {
+            display: block;
+            font-weight: 200;
+            color: #8990A1;
+        }
+    }
+}

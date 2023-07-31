@@ -2,6 +2,7 @@
 
     display: flex;
     gap: 75px;
+    
 
     & > li {
         list-style: none;
@@ -27,6 +28,13 @@
 
         & > li {
             width: 33%;
+            display: grid;
+            justify-items: start;
+            align-items: start;
+
+            a {
+                margin-top: auto;
+            }
         }
 
     }

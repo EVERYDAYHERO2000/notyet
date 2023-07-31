@@ -79,49 +79,95 @@
         }
     }   
 
-    #platform &__content {
+    &#platform &__content {
         text-align: center;
         padding: 64px 124px 48px 124px;
     }
 
-    #platform &__content_column {
+    &#platform &__content_column {
         padding-bottom: 48px;
     }    
 
 
-    #platform &__cover {
+    &#platform &__cover {
 
     } 
 
-    #wristband &__content {
+    &#wristband &__content {
+        text-align: center;
+        padding: 64px 124px 48px 124px;
+    }
+
+    &#wristband &__cover {
+        padding: 0 200px 44px;
+    }
+
+    &#mobile-app &__content {
+        text-align: center;
+        padding: 64px 124px 48px 124px;
+    }
+
+    &#mobile-app &__cover {
+        padding: 0 120px;
+        margin-bottom: -32px;
+    }
+
+    &#dashboard {
+        .img-description {
+            text-align: center;
+            color: #8990A1;
+            width: 100%;
+            font-size: 18px;
+            display: inline-block;
+            margin-bottom: 48px;
+        }
+    }
+
+    &#dashboard &__content {
+        text-align: center;
+        padding: 64px 124px 48px 124px;
 
     }
 
-    #wristband &__cover {
+    &#dashboard .columns {
+        align-items: baseline;
+        margin-bottom: 48px;
+    }
+
+    &#dashboard &__cover {
+        margin: -48px -24px 0;
+
+        img {
+            margin-bottom: -16px;
+        }
+    }
+
+    &#solution {
+        background-color: $color-main;
+        color: #fff;
+        margin: 0 calc(50% - 50vw);
+        padding: 48px calc(50vw - 50%);
+    }
+
+    &#solution &__content {
+        
+        & > .text, & h2 {
+            width: 50%;
+        }
+    }
+
+    &#solution &__cover {
 
     }
 
-    #mobile-app &__content {
-
+    &#team &__content {
+        img {
+            width: 50%;
+            transform: translateX(-32px);
+        }
     }
 
-    #mobile-app &__cover {
-
-    }
-
-    #dashboard &__content {
-
-    }
-
-    #dashboard &__cover {
-
-    }
-
-    #team &__content {
-
-    }
-
-    #team &__cover {
+    &#team &__cover {
 
     }
 }
