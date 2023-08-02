@@ -77,6 +77,20 @@
         .col-image {
             height: 164px;
         }
+
+        .anim-show {
+            transition-property: all;
+            transition-duration: .6s;
+            transition-timing-function: ease;
+        }
+
+        .anim-show_ready {
+            transform: scale(90%) translateY(30px);
+        }
+
+        .anim-show_complete {
+            transform: scale(100%) translateY(0);
+        }
     }   
 
     &#platform &__content {
@@ -100,6 +114,18 @@
 
     &#wristband &__cover {
         padding: 0 200px 44px;
+
+        .anim-show {
+            transition: all 1s ease;
+        }
+
+        .anim-show_ready {
+            transform: scale(110%);
+        }
+
+        .anim-show_complete {
+            transform: scale(100%);
+        }
     }
 
     &#mobile-app &__content {
@@ -110,6 +136,18 @@
     &#mobile-app &__cover {
         padding: 0 120px;
         margin-bottom: -32px;
+
+        .anim-show {
+            transition: all 1.5s ease;
+        }
+
+        .anim-show_ready {
+            transform: scale(90%);
+        }
+
+        .anim-show_complete {
+            transform: scale(100%);
+        }
     }
 
     &#dashboard {
@@ -120,6 +158,8 @@
             font-size: 18px;
             display: inline-block;
             margin-bottom: 48px;
+            position: relative;
+            z-index: 100;
         }
     }
 
@@ -140,6 +180,18 @@
         img {
             margin-bottom: -16px;
         }
+
+        .anim-show {
+            transition: all 1.5s ease;
+        }
+
+        .anim-show_ready {
+            transform: scale(90%);
+        }
+
+        .anim-show_complete {
+            transform: scale(100%);
+        }
     }
 
     &#solution {
@@ -147,6 +199,12 @@
         color: #fff;
         margin: 0 calc(50% - 50vw);
         padding: 48px calc(50vw - 50%);
+
+        li ul {
+            gap:16px;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &#solution &__content {
@@ -157,6 +215,14 @@
     }
 
     &#solution &__cover {
+
+    }
+
+    &#team {
+
+        .hightlight:before {
+            background-image: url("assets/line.svg")
+        }
 
     }
 
