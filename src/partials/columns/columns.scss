@@ -1,0 +1,58 @@
+.columns {
+
+    display: flex;
+    gap: 4px 75px;
+
+    @include sm {
+        flex-direction: column;
+    }
+    
+
+    & > li {
+        list-style: none;
+    }
+
+    &_2 {
+        
+        & > li {
+            width: 50%;
+
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+
+    &_2-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & > li {
+
+        }    
+
+        @include sm {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &_3 {
+
+        & > li {
+            width: 33%;
+            display: grid;
+            justify-items: start;
+            align-items: start;
+
+            @include sm {
+                width: 100%;
+            }
+
+            a {
+                margin-top: auto;
+            }
+        }
+
+    }
+}
