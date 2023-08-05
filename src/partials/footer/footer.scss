@@ -10,6 +10,10 @@
     position: relative;
     z-index: 1000;
 
+    @include sm {
+        margin-top: 0;
+    }
+
 
     div {
         width: 50%;

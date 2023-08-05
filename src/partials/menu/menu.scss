@@ -10,6 +10,10 @@
    backdrop-filter: blur(10px);
    background-color: rgba(250,250,250,0.8);
 
+   @include sm {
+    display: none;
+   }
+
    &_hidden {
     transform: translateY(-100%);
     
