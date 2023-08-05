@@ -7,10 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-<<<<<<< Updated upstream
-/******/ 	"use strict";
-=======
->>>>>>> Stashed changes
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/app.js":
@@ -19,9 +15,6 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-<<<<<<< Updated upstream
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n\nconsole.log(\"Lets rock\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9OT1RZRVQvLi9zcmMvYXBwLmpzPzExMTIiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTtBQUVBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWSxXQUFaIiwiZmlsZSI6Ii4vc3JjL2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9hcHAuc2Nzcyc7XG5cbmNvbnNvbGUubG9nKFwiTGV0cyByb2NrXCIpXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/app.js\n");
-=======
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.scss */ \"./src/app.scss\");\n/* harmony import */ var _partials_menu_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./partials/menu/menu.js */ \"./src/partials/menu/menu.js\");\n/* harmony import */ var _partials_menu_menu_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_partials_menu_menu_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _partials_cards_cards_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./partials/cards/cards.js */ \"./src/partials/cards/cards.js\");\n/* harmony import */ var _partials_cards_cards_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_partials_cards_cards_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _partials_scroll_scroll_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./partials/scroll/scroll.js */ \"./src/partials/scroll/scroll.js\");\n/* harmony import */ var _partials_scroll_scroll_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_partials_scroll_scroll_js__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\nconsole.log(\"Lets rock\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9OT1RZRVQvLi9zcmMvYXBwLmpzPzExMTIiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUVBQSxPQUFPLENBQUNDLEdBQVIsQ0FBWSxXQUFaIiwiZmlsZSI6Ii4vc3JjL2FwcC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9hcHAuc2Nzcyc7XG5pbXBvcnQgJy4vcGFydGlhbHMvbWVudS9tZW51LmpzJztcbmltcG9ydCAnLi9wYXJ0aWFscy9jYXJkcy9jYXJkcy5qcyc7XG5pbXBvcnQgJy4vcGFydGlhbHMvc2Nyb2xsL3Njcm9sbC5qcyc7XG5cbmNvbnNvbGUubG9nKFwiTGV0cyByb2NrXCIpXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/app.js\n");
 
@@ -54,7 +47,6 @@ eval("(() => {\n  const menu = document.querySelector('.menu');\n  let scrollPos
 /***/ (() => {
 
 eval("(() => {\n  function hasClass(element, className) {\n    return (' ' + element.className + ' ').indexOf(' ' + className + ' ') > -1;\n  }\n\n  let img = document.querySelectorAll('.anim-show');\n\n  for (let index = 0; index < img.length; index++) {\n    img[index].classList.add('anim-show_ready');\n  }\n\n  document.addEventListener('scroll', function (el) {\n    let doc = document.documentElement;\n    let currentTop = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);\n\n    for (let index = 0; index < img.length; index++) {\n      let elBox = img[index].getBoundingClientRect();\n\n      if (elBox.y < window.outerHeight / 1.5) {\n        if (hasClass(img[index], 'anim-show_ready')) {\n          setTimeout(function () {\n            img[index].classList.remove('anim-show_ready');\n            img[index].classList.add('anim-show_complete');\n          }, 100 * (index + 1));\n        }\n      } else {\n        if (hasClass(img[index], 'anim-show_complete')) {\n          img[index].classList.add('anim-show_ready');\n          img[index].classList.remove('anim-show_complete');\n        }\n      }\n    }\n  });\n})();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9OT1RZRVQvLi9zcmMvcGFydGlhbHMvc2Nyb2xsL3Njcm9sbC5qcz84Yjg4Il0sIm5hbWVzIjpbImhhc0NsYXNzIiwiZWxlbWVudCIsImNsYXNzTmFtZSIsImluZGV4T2YiLCJpbWciLCJkb2N1bWVudCIsInF1ZXJ5U2VsZWN0b3JBbGwiLCJpbmRleCIsImxlbmd0aCIsImNsYXNzTGlzdCIsImFkZCIsImFkZEV2ZW50TGlzdGVuZXIiLCJlbCIsImRvYyIsImRvY3VtZW50RWxlbWVudCIsImN1cnJlbnRUb3AiLCJ3aW5kb3ciLCJwYWdlWU9mZnNldCIsInNjcm9sbFRvcCIsImNsaWVudFRvcCIsImVsQm94IiwiZ2V0Qm91bmRpbmdDbGllbnRSZWN0IiwieSIsIm91dGVySGVpZ2h0Iiwic2V0VGltZW91dCIsInJlbW92ZSJdLCJtYXBwaW5ncyI6IkFBQUEsQ0FBQyxNQUFJO0FBRUQsV0FBU0EsUUFBVCxDQUFrQkMsT0FBbEIsRUFBMkJDLFNBQTNCLEVBQXNDO0FBQ2xDLFdBQU8sQ0FBQyxNQUFNRCxPQUFPLENBQUNDLFNBQWQsR0FBMEIsR0FBM0IsRUFBZ0NDLE9BQWhDLENBQXdDLE1BQU1ELFNBQU4sR0FBa0IsR0FBMUQsSUFBaUUsQ0FBQyxDQUF6RTtBQUNIOztBQUVELE1BQUlFLEdBQUcsR0FBR0MsUUFBUSxDQUFDQyxnQkFBVCxDQUEwQixZQUExQixDQUFWOztBQUVBLE9BQUssSUFBSUMsS0FBSyxHQUFHLENBQWpCLEVBQW9CQSxLQUFLLEdBQUdILEdBQUcsQ0FBQ0ksTUFBaEMsRUFBd0NELEtBQUssRUFBN0MsRUFBaUQ7QUFDN0NILElBQUFBLEdBQUcsQ0FBQ0csS0FBRCxDQUFILENBQVdFLFNBQVgsQ0FBcUJDLEdBQXJCLENBQXlCLGlCQUF6QjtBQUNIOztBQUVETCxFQUFBQSxRQUFRLENBQUNNLGdCQUFULENBQTBCLFFBQTFCLEVBQW1DLFVBQVNDLEVBQVQsRUFBWTtBQUMzQyxRQUFJQyxHQUFHLEdBQUdSLFFBQVEsQ0FBQ1MsZUFBbkI7QUFDQSxRQUFJQyxVQUFVLEdBQUcsQ0FBQ0MsTUFBTSxDQUFDQyxXQUFQLElBQXNCSixHQUFHLENBQUNLLFNBQTNCLEtBQTBDTCxHQUFHLENBQUNNLFNBQUosSUFBaUIsQ0FBM0QsQ0FBakI7O0FBRUEsU0FBSyxJQUFJWixLQUFLLEdBQUcsQ0FBakIsRUFBb0JBLEtBQUssR0FBR0gsR0FBRyxDQUFDSSxNQUFoQyxFQUF3Q0QsS0FBSyxFQUE3QyxFQUFpRDtBQUM3QyxVQUFJYSxLQUFLLEdBQUdoQixHQUFHLENBQUNHLEtBQUQsQ0FBSCxDQUFXYyxxQkFBWCxFQUFaOztBQUVBLFVBQUlELEtBQUssQ0FBQ0UsQ0FBTixHQUFVTixNQUFNLENBQUNPLFdBQVAsR0FBbUIsR0FBakMsRUFBcUM7QUFFakMsWUFBSXZCLFFBQVEsQ0FBQ0ksR0FBRyxDQUFDRyxLQUFELENBQUosRUFBYSxpQkFBYixDQUFaLEVBQTRDO0FBQ3hDaUIsVUFBQUEsVUFBVSxDQUFDLFlBQVU7QUFDakJwQixZQUFBQSxHQUFHLENBQUNHLEtBQUQsQ0FBSCxDQUFXRSxTQUFYLENBQXFCZ0IsTUFBckIsQ0FBNEIsaUJBQTVCO0FBQ0FyQixZQUFBQSxHQUFHLENBQUNHLEtBQUQsQ0FBSCxDQUFXRSxTQUFYLENBQXFCQyxHQUFyQixDQUF5QixvQkFBekI7QUFDSCxXQUhTLEVBR1IsT0FBT0gsS0FBSyxHQUFHLENBQWYsQ0FIUSxDQUFWO0FBSUg7QUFFSixPQVRELE1BU087QUFDSCxZQUFJUCxRQUFRLENBQUNJLEdBQUcsQ0FBQ0csS0FBRCxDQUFKLEVBQWEsb0JBQWIsQ0FBWixFQUFnRDtBQUM1Q0gsVUFBQUEsR0FBRyxDQUFDRyxLQUFELENBQUgsQ0FBV0UsU0FBWCxDQUFxQkMsR0FBckIsQ0FBeUIsaUJBQXpCO0FBQ0FOLFVBQUFBLEdBQUcsQ0FBQ0csS0FBRCxDQUFILENBQVdFLFNBQVgsQ0FBcUJnQixNQUFyQixDQUE0QixvQkFBNUI7QUFDSDtBQUVKO0FBRUo7QUFFSixHQTFCRDtBQTJCSCxDQXZDRCIsInNvdXJjZXNDb250ZW50IjpbIigoKT0+e1xuXG4gICAgZnVuY3Rpb24gaGFzQ2xhc3MoZWxlbWVudCwgY2xhc3NOYW1lKSB7XG4gICAgICAgIHJldHVybiAoJyAnICsgZWxlbWVudC5jbGFzc05hbWUgKyAnICcpLmluZGV4T2YoJyAnICsgY2xhc3NOYW1lICsgJyAnKSA+IC0xO1xuICAgIH1cblxuICAgIGxldCBpbWcgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcuYW5pbS1zaG93Jyk7XG5cbiAgICBmb3IgKGxldCBpbmRleCA9IDA7IGluZGV4IDwgaW1nLmxlbmd0aDsgaW5kZXgrKykge1xuICAgICAgICBpbWdbaW5kZXhdLmNsYXNzTGlzdC5hZGQoJ2FuaW0tc2hvd19yZWFkeScpO1xuICAgIH1cblxuICAgIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ3Njcm9sbCcsZnVuY3Rpb24oZWwpe1xuICAgICAgICBsZXQgZG9jID0gZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50O1xuICAgICAgICBsZXQgY3VycmVudFRvcCA9ICh3aW5kb3cucGFnZVlPZmZzZXQgfHwgZG9jLnNjcm9sbFRvcCkgIC0gKGRvYy5jbGllbnRUb3AgfHwgMCk7XG5cbiAgICAgICAgZm9yIChsZXQgaW5kZXggPSAwOyBpbmRleCA8IGltZy5sZW5ndGg7IGluZGV4KyspIHtcbiAgICAgICAgICAgIGxldCBlbEJveCA9IGltZ1tpbmRleF0uZ2V0Qm91bmRpbmdDbGllbnRSZWN0KCk7XG5cbiAgICAgICAgICAgIGlmIChlbEJveC55IDwgd2luZG93Lm91dGVySGVpZ2h0LzEuNSl7XG4gICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgaWYgKGhhc0NsYXNzKGltZ1tpbmRleF0sICdhbmltLXNob3dfcmVhZHknKSl7XG4gICAgICAgICAgICAgICAgICAgIHNldFRpbWVvdXQoZnVuY3Rpb24oKXtcbiAgICAgICAgICAgICAgICAgICAgICAgIGltZ1tpbmRleF0uY2xhc3NMaXN0LnJlbW92ZSgnYW5pbS1zaG93X3JlYWR5Jyk7XG4gICAgICAgICAgICAgICAgICAgICAgICBpbWdbaW5kZXhdLmNsYXNzTGlzdC5hZGQoJ2FuaW0tc2hvd19jb21wbGV0ZScpO1xuICAgICAgICAgICAgICAgICAgICB9LDEwMCAqIChpbmRleCArIDEpKTtcbiAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIH0gZWxzZSB7XG4gICAgICAgICAgICAgICAgaWYgKGhhc0NsYXNzKGltZ1tpbmRleF0sICdhbmltLXNob3dfY29tcGxldGUnKSkge1xuICAgICAgICAgICAgICAgICAgICBpbWdbaW5kZXhdLmNsYXNzTGlzdC5hZGQoJ2FuaW0tc2hvd19yZWFkeScpO1xuICAgICAgICAgICAgICAgICAgICBpbWdbaW5kZXhdLmNsYXNzTGlzdC5yZW1vdmUoJ2FuaW0tc2hvd19jb21wbGV0ZScpO1xuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgfVxuICAgICAgICAgICAgXG4gICAgICAgIH1cblxuICAgIH0pOyAgICBcbn0pKCk7Il0sImZpbGUiOiIuL3NyYy9wYXJ0aWFscy9zY3JvbGwvc2Nyb2xsLmpzLmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/partials/scroll/scroll.js\n");
->>>>>>> Stashed changes
 
 /***/ }),
 
@@ -64,10 +56,7 @@ eval("(() => {\n  function hasClass(element, className) {\n    return (' ' + ele
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-<<<<<<< Updated upstream
-=======
 "use strict";
->>>>>>> Stashed changes
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9OT1RZRVQvLi9zcmMvYXBwLnNjc3M/NGJiYSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEiLCJmaWxlIjoiLi9zcmMvYXBwLnNjc3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/app.scss\n");
 
 /***/ })
@@ -99,8 +88,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	}
 /******/ 	
 /************************************************************************/
-<<<<<<< Updated upstream
-=======
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -130,7 +117,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
->>>>>>> Stashed changes
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports

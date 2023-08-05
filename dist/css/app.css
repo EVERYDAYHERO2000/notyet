@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap);
-=======
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap);
->>>>>>> Stashed changes
 /* By Athlon Front-End Team */
 /* Core variables */
 /**
@@ -213,40 +209,20 @@ body {
 /**
  * Dirty hacks, yes internet explorer, we are looking at you
 */
-<<<<<<< Updated upstream
-=======
 html {
   scroll-behavior: smooth;
 }
 
->>>>>>> Stashed changes
 /* Partials */
 body {
   background-color: #fafafa;
   color: #000;
-<<<<<<< Updated upstream
-=======
   scroll-behavior: smooth;
   overflow-x: hidden;
->>>>>>> Stashed changes
 }
 
 p {
   margin: 0 0 2vw 0;
-<<<<<<< Updated upstream
-  font-size: 24px;
-  line-height: 38px;
-}
-
-h1 {
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 87px;
-}
-@media (max-width: 576px) {
-  h1 {
-    font-size: 48px;
-=======
 }
 
 h1 {
@@ -259,13 +235,10 @@ h1 {
 @media (max-width: 576px) {
   h1 {
     font-size: 38px;
->>>>>>> Stashed changes
     line-height: 1.3;
   }
 }
 
-<<<<<<< Updated upstream
-=======
 h2 {
   font-size: 42px;
   font-weight: 900;
@@ -315,7 +288,6 @@ h4 {
   }
 }
 
->>>>>>> Stashed changes
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,16 +295,11 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-<<<<<<< Updated upstream
-  margin: 0 45px;
-  width: 100vw;
-=======
   padding: 0 45px;
   width: 100vw;
   max-width: 100vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
->>>>>>> Stashed changes
 }
 .page__inner {
   max-width: 1000px;
@@ -342,10 +309,7 @@ h4 {
   .page {
     margin: 0 0;
     width: 100vw;
-<<<<<<< Updated upstream
-=======
     padding: 0 24px;
->>>>>>> Stashed changes
   }
 }
 
@@ -452,12 +416,6 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-<<<<<<< Updated upstream
-  margin-top: -3vh;
-  position: relative;
-  z-index: 1000;
-}
-=======
   margin-top: 48px;
   position: relative;
   z-index: 1000;
@@ -467,7 +425,6 @@ h4 {
     margin-top: 0;
   }
 }
->>>>>>> Stashed changes
 .footer div {
   width: 50%;
 }
@@ -495,8 +452,6 @@ h4 {
     margin-top: 20px;
   }
 }
-<<<<<<< Updated upstream
-=======
 
 .menu {
   position: fixed;
@@ -1265,4 +1220,3 @@ h4 {
   font-weight: 200;
   color: #8990A1;
 }
->>>>>>> Stashed changes
