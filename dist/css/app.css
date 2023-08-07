@@ -532,9 +532,18 @@ h4 {
   z-index: 200;
   width: 50%;
   height: 100vh;
-  padding: 160px 0 0 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 576px) {
   .section#product .section__content {
@@ -546,7 +555,7 @@ h4 {
 .section#product .section__cover {
   position: absolute;
   z-index: 100;
-  top: 0;
+  top: calc(50vh - 440px);
   right: 0;
   height: 100%;
   margin-right: -120px;
@@ -568,6 +577,7 @@ h4 {
   top: 0;
   right: 0;
   width: auto;
+  max-height: 920px;
 }
 .section#rpm {
   background-color: black;
@@ -1018,6 +1028,9 @@ h4 {
   border-radius: 25px;
   padding: 8px 16px;
 }
+.button_blue:hover {
+  background-color: #0068E2;
+}
 .button_clear {
   color: #000;
   padding: 0;
@@ -1027,6 +1040,9 @@ h4 {
   font-family: "Noto Sans", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   cursor: pointer;
   position: relative;
+}
+.button_clear.button_focus {
+  pointer-events: none;
 }
 .button_clear.button_focus::before {
   content: "";
@@ -1039,6 +1055,9 @@ h4 {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzQiIGhlaWdodD0iNSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgdmlld0JveD0iMCAwIDc0IDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTIgMi4xNTdoNDYuMzczYzUuNTI2IDAgMTEuMTQ1LS40MzQgMTYuNjYuMTQgMi4xNzYuMjI4IDguNzEuNzAzIDYuNTI3LjcwMyIgc3Ryb2tlPSIjMDA3NUZGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjwvc3ZnPg==);
   background-size: 100% 6px;
   background-repeat: no-repeat;
+}
+.button_clear:hover {
+  opacity: 0.85;
 }
 
 .hightlight {
