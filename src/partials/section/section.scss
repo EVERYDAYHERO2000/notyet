@@ -40,7 +40,7 @@
     &#product &__cover {
         position: absolute;
         z-index: 100;
-        top: calc(50vh - 440px);
+        top: calc(50vh - 50%);
         right:0;
         height: 100%;
         margin-right: -120px;
@@ -63,6 +63,34 @@
             right:0;
             width: auto;
             max-height: 920px;
+        }
+
+        & .cover_front {
+            transform: translateX(-30px);
+            animation: band-position 4s 0.5s ease forwards;
+        }
+
+        & .cover_back {
+            transform: translateX(30px);
+            animation: phone-position 6s 0.5s ease forwards;
+        }
+
+        @keyframes band-position {
+            from {
+                transform: translateX(-30px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes phone-position {
+            from {
+                transform: translateX(30px);
+            }
+            to {
+                transform: translateX(0);
+            }
         }
     } 
 

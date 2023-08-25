@@ -555,7 +555,7 @@ h4 {
 .section#product .section__cover {
   position: absolute;
   z-index: 100;
-  top: calc(50vh - 440px);
+  top: calc(50vh - 50%);
   right: 0;
   height: 100%;
   margin-right: -120px;
@@ -578,6 +578,58 @@ h4 {
   right: 0;
   width: auto;
   max-height: 920px;
+}
+.section#product .section__cover .cover_front {
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  -webkit-animation: band-position 4s 0.5s ease forwards;
+          animation: band-position 4s 0.5s ease forwards;
+}
+.section#product .section__cover .cover_back {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+  -webkit-animation: phone-position 6s 0.5s ease forwards;
+          animation: phone-position 6s 0.5s ease forwards;
+}
+@-webkit-keyframes band-position {
+  from {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes band-position {
+  from {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes phone-position {
+  from {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes phone-position {
+  from {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 .section#rpm {
   background-color: black;
